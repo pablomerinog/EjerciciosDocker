@@ -1,41 +1,40 @@
 ### Ejercicios Volúmenes
 
-1. Crea un volumen docker que se llame miweb .
+1. Crea un volumen docker que se llame `miweb` .
 
-   ![image-20240205114819678](./../../../../../Escritorio/DESPLIEGUE/typora-user-images/image-20240205114819678.png)
+   ![Imagen de WhatsApp 2024-02-05 a las 12.59.15_3ebdc5d2](C:\Users\pablo\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\7C590F01490190DB0ED02A5070E20F01\Imagen de WhatsApp 2024-02-05 a las 12.59.15_3ebdc5d2.jpg)
 
 2. Crea un contenedor desde la imagen php:7.4-apache donde montes en el directorio
-    /var/www/html (que sabemos que es el DocumentRoot del servidor que nos ofrece esa
+    `/var/www/html` (que sabemos que es el DocumentRoot del servidor que nos ofrece esa
     imagen) el volumen docker que has creado.
 
-  ![image-20240205114850251](./../../../../../Escritorio/DESPLIEGUE/typora-user-images/image-20240205114850251.png)
+  	![Imagen de WhatsApp 2024-02-05 a las 12.59.15_124dc0f7](C:\Users\pablo\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\9E3CFC48ECCF81A0D57663E129AEF3CB\Imagen de WhatsApp 2024-02-05 a las 12.59.15_124dc0f7.jpg)
 
-3. Utiliza el comando docker cp para copiar un fichero index.html en el directorio
-    /var/www/html .
+3. Utiliza el comando `docker cp` para copiar un fichero index.html en el directorio
+    `/var/www/html .`
     
-    Utilicé el comando docker exec en vez de docker cp por que me daba problemas.
+    Utilicé el comando `docker exec` en vez de `docker cp` por que me daba problemas.
     
-    ![image-20240205114952006](./../../../../../Escritorio/DESPLIEGUE/typora-user-images/image-20240205114952006.png)
 
-  
+  	![Imagen de WhatsApp 2024-02-05 a las 13.03.08_dd8df13b](C:\Users\pablo\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\DC5689792E08EB2E219DCE49E64C885B\Imagen de WhatsApp 2024-02-05 a las 13.03.08_dd8df13b.jpg)
 
 4. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero
     index.html .
 
-  ![image-20240205115012643](./../../../../../Escritorio/DESPLIEGUE/typora-user-images/image-20240205115012643.png)
+  ![Imagen de WhatsApp 2024-02-05 a las 12.59.15_f8edff30](C:\Users\pablo\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\7A53928FA4DD31E82C6EF826F341DAEC\Imagen de WhatsApp 2024-02-05 a las 12.59.15_f8edff30.jpg)
 
 5. Borra el contenedor.
 
-   ![image-20240205115151636](./../../../../../Escritorio/DESPLIEGUE/typora-user-images/image-20240205115151636.png)
+   ![Imagen de WhatsApp 2024-02-05 a las 12.59.15_4e017d78](C:\Users\pablo\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\28267AB848BCF807B2ED53C3A8F8FC8A\Imagen de WhatsApp 2024-02-05 a las 12.59.15_4e017d78.jpg)
 
 6. Crea un nuevo contenedor y monta el mismo volumen como en el ejercicio anterior.
 
-   ![image-20240205115844088](./../../../../../Escritorio/DESPLIEGUE/typora-user-images/image-20240205115844088.png)
+   ![Imagen de WhatsApp 2024-02-05 a las 12.59.15_4e017d78](C:\Users\pablo\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\28267AB848BCF807B2ED53C3A8F8FC8A\Imagen de WhatsApp 2024-02-05 a las 12.59.15_4e017d78.jpg)
 
 7. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero
     index.html . ¿Seguía existiendo ese fichero?
 
-​	![image-20240205115911613](./../../../../../Escritorio/DESPLIEGUE/typora-user-images/image-20240205115911613.png)
+​	![Imagen de WhatsApp 2024-02-05 a las 12.59.15_6d2a39fd](C:\Users\pablo\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\7A53928FA4DD31E82C6EF826F341DAEC\Imagen de WhatsApp 2024-02-05 a las 12.59.15_6d2a39fd.jpg)
 
 ### Ejercicios Bind Mount
 
